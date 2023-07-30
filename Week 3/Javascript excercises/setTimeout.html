@@ -1,0 +1,36 @@
+<script>
+
+function sayHello() {
+    console.log( "Hello World");
+}
+setTimeout(sayHello, 3000);
+
+
+
+
+// otra opcion directa METIDA EN LA FUNCION DE UNA SOLA
+
+setTimeout(function sayHello() {
+    console.log("Hello World");
+}, 4000);
+
+
+
+// setInterval PARA INTERVALOS REPETITVOS EN EL TIEMPO
+
+function sayHello() {
+    console.log( "Hello World");
+}
+setInterval(sayHello, 3000);
+
+
+setInterval(function sayHello() {
+    console.log("Hello World");
+}, 4000);
+
+
+
+
+
+
+</script>

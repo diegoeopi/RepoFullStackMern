@@ -1,0 +1,71 @@
+var letters = ['a','b','c','d']
+const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let elementAtIndexFive = numArray[5]
+console.log('The array element with index 5 is: ', elementAtIndexFive);
+
+
+
+/*
+Instructions
+
+Create a conditional that checks if you're old enough to vote.
+- isOldEnoughToVote(age)
+- response will store true or false values
+
+*/
+
+let response;
+
+function isOldEnoughToVote(age) {
+  let age = 18;
+  if(age >= 18) 
+  {response = 'true'}
+  else
+  {response = 'false'}
+  return response;
+}
+
+//open the browser console to check results
+console.log('results: ', isOldEnoughToVote(age));
+
+//don't change this line
+  module.exports = { isOldEnoughToVote };
+
+
+
+
+
+
+let response;
+var age= 18;
+function isOldEnoughToVote(age) {
+
+  if(age >= 18) 
+  {response = "true"}
+  else
+  {response = "false"}
+  return response;
+}
+
+
+
+<!-- 
+esta es la que funciono -->
+
+
+var age = 18
+function isOldEnoughToVote(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+} 
+
+
+
+//open the browser console to check results
+console.log('results: ', isOldEnoughToVote(age));
+
+//don't change this line
+  module.exports = { isOldEnoughToVote };
