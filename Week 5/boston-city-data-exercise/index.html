@@ -1,0 +1,27 @@
+<div id="container">
+  <!-- populated by JS-->
+</div>
+<script src="./boston.js"></script>
+<script>
+  function renderBoston(boston, container) {
+  const people = boston.data;
+  const topEarners = people.filter(function (employee) {
+    // Filter out employees earning more than 200k per year
+    return +employee[11] > 200000;
+  });
+
+  let html = '';
+  for (let i = 0; i < topEarners.length; i++) {
+    const name = topEarners[i][8];
+    const salary = topEarners[i][11];
+    html +=
+      '<li class="post">' + '<h2>' + name + '</h2>' + '<p>Total Salary: $' + salary + '</p>' + '</li>';
+  }
+
+  // Display the html variable inside a ul element with id="topEmployees"
+  container.innerHTML = '<ul id="topEmployees">' + html + '</ul>';
+}
+
+
+renderBoston(boston, document.getElementById('container'));
+</script>
